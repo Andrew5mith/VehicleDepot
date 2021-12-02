@@ -1,0 +1,54 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+  <div class="category-container">
+    <div class="row">
+      <div class="col-lg-4 category-1">
+        <div class="category">
+          <div class="category-image">
+            <img src="/images/mercedes_car.png" class="img-fluid d-block m-auto" alt="category-image">
+            </div>
+          <div class="category-details">
+            <div class="category-name">
+              <h1 class="text-center">Cars</h1>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 category-1">
+        <div class="category">
+          <div class="category-image">
+            <img src="/images/chevy_suv.png" class="img-fluid d-block m-auto" alt="category-image">
+            </div>
+          <div class="category-details">
+            <div class="category-name">
+              <h1 class="text-center">SUVs</h1>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 category-1">
+        <div class="category">
+          <div class="category-image">
+            <img src="/images/ford_truck.png" class="img-fluid d-block m-auto" alt="category-image">
+            </div>
+          <div class="category-details">
+            <div class="category-name">
+              <h1 class="text-center">Trucks</h1>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.body-container').before('<section class=\"hero\"> <div class=\"hero-content\"> <h1>Welcome Back!</h1> <h3>Browse, Buy, Sell</h3></div></section>');
+    });
+</script>
