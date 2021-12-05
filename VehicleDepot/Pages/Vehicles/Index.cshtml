@@ -12,25 +12,38 @@
 </p>
 
 <form>
-    <p>
+    <span>
         Search: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
+        <input type="submit" value="Search" />      
+    </span>
+
+    <span class="sort">
         <select asp-for="VehicleMake" asp-items="Model.Makes">
             <option value="">Make</option>
         </select>
         <select asp-for="VehicleModel" asp-items="Model.Models">
             <option value="">Model</option>
         </select>
-    </p>
+        <select asp-for="VehicleType" asp-items="Model.Types">
+            <option value="">Type</option>
+        </select>
+        <select asp-for="sortByPrice">
+            <option value="">Sort By</option>
+            <option value="1">Price: Low to High</option>
+            <option value="2">Price:High to Low</option>
+        </select>
+        <input type="submit" value="Filter" />  
+    </span>
+
 </form>
 
-<div class="row">
+<div class="row" style="margin-top: 2rem;">
     @if (Model.Vehicle.Any())
     {
         @foreach (var vehicle in Model.Vehicle)
         {
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <a asp-page="./Details" asp-route-uid="@vehicle.ID">
+                <a asp-page="./Details" asp-route-id="@vehicle.ID">
                     <div class="product-grids product-item">
                         <div class="product-img">
                             <img class="image-product" src="@vehicle.ImageString" alt="" />

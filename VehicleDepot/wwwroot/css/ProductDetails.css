@@ -1,0 +1,287 @@
+﻿
+
+/* STYLESHEET BEGINS HERE */
+
+/* Transparent parent container */
+.product-details-container {
+    width: 100%;
+    padding-bottom: 20%;
+    position: relative;
+    z-index: 998;
+}
+
+/* Exit button for product-details */
+.exit {
+    float: right;
+    height: 50px;
+    width: 50px;
+    z-index: 999999;
+    margin-top: 1.5%;
+    margin-right: 70px;
+}
+
+    .exit i {
+        font-size: 52px;
+        color: #e74c3c;
+    }
+
+/* Main leasing info-product-details container */
+.product-details {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 7%;
+    z-index: 999999;
+    display: inline-flex;
+}
+
+    /* General column styles */
+    .product-details .product-details-column {
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* More detailed column styles */
+    .product-details .product-details-column1 {
+        background: white
+    }
+
+    .product-details .product-details-column2 {
+        background: #f9f9f9;
+    }
+
+    /* Clear floats after the columns */
+    .product-details:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .product-details .product-details-column1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-details .product-details-column2 .inner-text {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .back-link {
+        margin-top: 1rem;
+    }
+
+.inner-text .product-details-row {
+    width: 100%;
+}
+
+.inner-text .product-details-row1 {
+    height: 25%;
+    border-bottom: solid 1px #333;
+}
+
+.inner-text .product-details-row2 {
+    height: 75%;
+}
+
+.inner-text .title-section {
+    float: left;
+    width: 80%;
+    height: 100%;
+    background: #f9f9f9;
+    font-family: 'Roboto';
+    color: #333;
+}
+
+    .inner-text .title-section h1 {
+        font-size: 32px;
+        font-weight: 300;
+        padding-top: 30px;
+    }
+
+    .inner-text .title-section p {
+        font-size: 16px;
+        font-weight: 200;
+        padding-top: 5px;
+    }
+
+.inner-text .logo-section img {
+    width: 100%;
+    height: auto;
+    overflow: none;
+    margin-top: 20px;
+}
+
+.inner-text .logo-section {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.inner-text .product-details-row2 table {
+    margin-top: 10px;
+    font-family: 'Roboto';
+    color: #333;
+}
+
+.product-details-row2 table th {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.product-details-row2 table .tg-yw4l2 {
+    font-weight: 300;
+}
+
+.product-details-row2 table .tg-yw4l {
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.callnow-btn {
+    width: 350px;
+    height: 75px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+    .callnow-btn .left {
+        height: 100%;
+        width: 80%;
+        float: left;
+    }
+
+    .callnow-btn .right {
+        height: 100%;
+        width: 20%;
+        float: left;
+        background: #2ecc71;
+        border-radius: 0px 8px 8px 0px
+    }
+
+    .callnow-btn .left h1 {
+        font-family: 'Roboto';
+        font-size: 32px;
+        line-height: 2.4;
+        font-weight: 200;
+        color: #333;
+        padding-left: 30px;
+    }
+
+    .callnow-btn .right i {
+        font-size: 48px;
+        line-height: 1.6;
+        color: white;
+        padding-left: 16px;
+    }
+
+.promo-notif {
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+    line-height: 3;
+}
+
+    .promo-notif .left {
+        float: left;
+        height: 100%;
+        width: 10%;
+    }
+
+    .promo-notif .right {
+        float: left;
+        height: 100%;
+        width: 90%;
+    }
+
+        .promo-notif .right h1 {
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-weight: 200;
+            color: #333;
+        }
+
+        .promo-notif .right span {
+            font-weight: 400;
+        }
+
+    .promo-notif .left i {
+        font-size: 26px;
+        color: #333;
+        padding-top: 7px;
+    }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 1200px) {
+    .product-details .product-details-column {
+        width: 100%;
+    }
+
+    /* (Responsive Styling) */
+    .exit {
+        margin-right: 10px;
+    }
+
+    .product-details {
+        width: 92%;
+        height: 400px;
+        margin-top: 80px;
+    }
+
+        .product-details .product-details-column1 {
+            height: 200px;
+            text-align: center;
+        }
+
+            .product-details .product-details-column1 img {
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+        .product-details .product-details-column2 {
+        }
+
+    .inner-text .product-details-row1 {
+        height: 20%;
+    }
+
+    .inner-text .title-section h1 {
+        padding-top: 14px;
+        font-size: 26px;
+    }
+
+    .inner-text .title-section p {
+        font-size: 14px;
+    }
+
+    .callnow-btn {
+        margin-top: 230px;
+    }
+
+        .callnow-btn .left {
+            background: white;
+            border-radius: 8px 0px 0px 8px;
+        }
+
+    .promo-notif {
+        width: 350px;
+        padding-left: 50px;
+    }
+
+        .promo-notif .left i {
+            font-size: 20px;
+            padding-top: 4px;
+        }
+
+        .promo-notif .right h1 {
+            font-size: 10px;
+            margin-left: -8px;
+        }
+}

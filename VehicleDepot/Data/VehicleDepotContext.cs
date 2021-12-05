@@ -14,10 +14,10 @@ namespace VehicleDepot.Data
         {
         }
 
-        public DbSet<VehicleDepot.Models.Vehicle> Vehicle { get; set; }
+        public DbSet<VehicleDepot.Models.Vehicle>? Vehicle { get; set; }
 
-        public DbSet<VehicleDepot.Models.Category> Category { get; set; }
+        public DbSet<VehicleDepot.Models.Category>? Category { get; set; }
 
-        public DbSet<VehicleDepot.Models.Manufacturer> Manufacturer { get; set; }
+        public DbSet<VehicleDepot.Models.Manufacturer>? Manufacturer { get; set; }
     }
 }

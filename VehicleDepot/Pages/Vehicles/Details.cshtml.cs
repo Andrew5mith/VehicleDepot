@@ -20,6 +20,8 @@ namespace VehicleDepot.Pages.Vehicles
         }
 
         public Vehicle Vehicle { get; set; }
+        public String ImageString { get; set; }
+        public String ManufacturerName { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,6 +31,11 @@ namespace VehicleDepot.Pages.Vehicles
             }
 
             Vehicle = await _context.Vehicle.FirstOrDefaultAsync(m => m.ID == id);
+
+            var mf = await _context.Manufacturer.FirstOrDefaultAsync(m => m.Id == Vehicle.ID);
+
+            ImageString = mf.ImageString;
+            ManufacturerName = mf.Name;
 
             if (Vehicle == null)
             {
