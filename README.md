@@ -1,6 +1,7 @@
 # VehicleDepot
 Homework
-Needed SSMS. 
+
+Needed: SSMS. 
 
 Change configuration to use your connection string in order to use your own DB. 
 
